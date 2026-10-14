@@ -94,3 +94,15 @@
     });
   });
 })();
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const track = document.querySelector('.ticker-track');
+  if (track) {
+    // Content ko 3-4 dafa duplicate karega taaki badi screen par bhi blank space na aaye
+    const content = track.innerHTML;
+    track.innerHTML = content + content + content + content;
+  }
+});
